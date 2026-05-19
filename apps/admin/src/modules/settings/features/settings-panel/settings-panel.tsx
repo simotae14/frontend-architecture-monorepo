@@ -7,13 +7,13 @@ import {
   updateAccountSettings,
 } from "../../api/settings.api";
 import { useAuth } from "@/modules/authentication/providers/use-auth";
-import { LoadingState } from "@/shared/components/feedback/loading-state";
-import { PageHeader } from "@/shared/components/page-header";
-import { SectionCard } from "@/shared/components/section-card";
-import { ToggleSettingRow } from "@/shared/components/toggle-setting-row";
-import { Button } from "@/shared/ui/button";
-import { Input } from "@/shared/ui/input";
-import { Label } from "@/shared/ui/label";
+import { LoadingState } from "@commerceos/shared/components/feedback/loading-state";
+import { PageHeader } from "@commerceos/shared/components/page-header";
+import { SectionCard } from "@commerceos/shared/components/section-card";
+import { ToggleSettingRow } from "@commerceos/shared/components/toggle-setting-row";
+import { Button } from "@commerceos/shared/ui/button";
+import { Input } from "@commerceos/shared/ui/input";
+import { Label } from "@commerceos/shared/ui/label";
 import type { Account, SettingsData } from "../../domain/settings.types";
 
 export default function SettingsPage() {

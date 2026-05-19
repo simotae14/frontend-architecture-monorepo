@@ -4,14 +4,14 @@ import { fetchOrder, updateOrder } from "../api/orders.api";
 import { useAuth } from "@/modules/authentication/providers/use-auth";
 import type { Order } from "../domain/orders.types";
 import { OrderLineItemsTable } from "../components/order-line-items-table";
-import { LoadingState } from "@/shared/components/feedback/loading-state";
-import { ActivityHistoryCard } from "@/shared/components/activity-history-card";
-import { KeyValueList } from "@/shared/components/key-value-list";
-import { PageHeader } from "@/shared/components/page-header";
-import { SectionCard } from "@/shared/components/section-card";
-import { StatusBadge } from "@/shared/components/status-badge";
-import { Button } from "@/shared/ui/button";
-import { formatCurrency, formatDate } from "@/shared/lib/utils";
+import { LoadingState } from "@commerceos/shared/components/feedback/loading-state";
+import { ActivityHistoryCard } from "@commerceos/shared/components/activity-history-card";
+import { KeyValueList } from "@commerceos/shared/components/key-value-list";
+import { PageHeader } from "@commerceos/shared/components/page-header";
+import { SectionCard } from "@commerceos/shared/components/section-card";
+import { StatusBadge } from "@commerceos/shared/components/status-badge";
+import { Button } from "@commerceos/shared/ui/button";
+import { formatCurrency, formatDate } from "@commerceos/shared/lib/utils";
 
 export default function OrderDetailPage() {
   const { hasPermission } = useAuth();

@@ -2,13 +2,13 @@ import { Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { fetchDiscounts } from "../api/discounts.api";
 import { useAuth } from "@/modules/authentication/providers/use-auth";
-import { LoadingState } from "@/shared/components/feedback/loading-state";
-import { PageHeader } from "@/shared/components/page-header";
-import { SectionCard } from "@/shared/components/section-card";
-import { StatusBadge } from "@/shared/components/status-badge";
-import { Button } from "@/shared/ui/button";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/shared/ui/table";
-import { formatDate } from "@/shared/lib/utils";
+import { LoadingState } from "@commerceos/shared/components/feedback/loading-state";
+import { PageHeader } from "@commerceos/shared/components/page-header";
+import { SectionCard } from "@commerceos/shared/components/section-card";
+import { StatusBadge } from "@commerceos/shared/components/status-badge";
+import { Button } from "@commerceos/shared/ui/button";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@commerceos/shared/ui/table";
+import { formatDate } from "@commerceos/shared/lib/utils";
 
 function formatDiscountValue(type: string, value: number) {
   if (type === "percentage") return `${value}%`;
