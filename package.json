@@ -2,10 +2,15 @@
   "name": "commerceos",
   "private": true,
   "workspaces": [
-      "apps/*",
-      "packages/*"
+    "apps/*",
+    "packages/*"
   ],
+  "packageManager": "npm@11.8.0",
   "scripts": {
-      "dev": "npm run dev --workspace=apps/admin"
+    "dev": "npm run dev --workspace=apps/app-shell",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "preview": "npm run preview --workspace=apps/app-shell"
   }
 }
